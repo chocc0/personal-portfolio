@@ -1,3 +1,10 @@
+### Wishes:
+- create form for contact
+- dynamic animations
+- "logo" for name 
+- fun or unique scroll/navbar
+- https://jackparsonss.me/#about
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
