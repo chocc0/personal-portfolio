@@ -3,24 +3,12 @@
     position:fixed;
     top: 0;
     height: 100vh;
-    width: 10%;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px black solid;
     text-align: center;
-}
-
-#navbar.inactive{
-    left: -100%;
-    overflow-y: visible;
-    transition: all 1s;
-    background-color: grey;
-}
-
-#navbar.active{
-    left: 0;
 }
 
 
@@ -37,18 +25,49 @@
 }
 
 .navbar-list li a{
-    color: black;
+    font-weight: 500;
     display: inline-block;
     width:100%;
     margin: 10px 0px;
     cursor: pointer;
-    transition: .0s .1s;
+    transition: 0.10s ease-in;
     text-decoration: none;
+    text-shadow: 0px 0px 50px #FEFFFD;
 }
 
-.navbar-list a:hover{
-    text-shadow: 0px 0px 10px rgb(91, 91, 231);
-    color:rgb(24, 24, 160);
-    transition: all .1s ease-in;
+.home-nav {
+    color:#281f06;
+    &:hover{
+        text-shadow: 0px 0px 2px #4b3007;
+    }
 }
 
+.about-nav {
+    color:#474df5;
+    &:hover{
+        text-shadow: 0px 0px 2px #a8aaf4;
+    }
+   
+}
+
+.projects-nav {
+    color:#FFBB00;
+    &:hover{text-shadow: 0px 0px 2px #FFEC18;}
+}
+
+.skills-nav {
+    color:#7FB50B;
+    &:hover{text-shadow: 0px 0px 2px #8dc612;}
+}
+
+.contact-nav {
+    color:#FC6E6E;
+    &:hover{text-shadow: 0px 0px 2px #FC6E6E;}
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-list li a{
+        font-size: 10pt;
+        line-height: 1;
+    }
+}

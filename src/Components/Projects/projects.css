@@ -1,40 +1,65 @@
 #projects {
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
 }
 
-.projects-container{
+
+.projects-home{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
     box-sizing: border-box;
     justify-content: center;
-    gap: 10px;
     width: 80%;
-    border: 1px solid black;
-
-    position: absolute
+    position: absolute;  
+    gap: 50px;
 }
 
 .project-page{
+    position:relative;  
     padding: 60px;
     margin: 20px;
     width: 80%;
-    height: 400px;
+    height: 600px;
     box-sizing:border-box;
-    border: 1px solid black;
+    box-shadow:darkblue;
     overflow: scroll;
+}
+
+.hidden{
+    animation: move-out 0.35s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.vis {
+    animation: move-in 0.35s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes move-in {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(50px);
+  }
+
+}
+
+@keyframes move-out {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+  }
 }
 
 .project-header {
     display: flex;
-    justify-content: space-between
-    
+    justify-content: space-between;
 }
 
 .project-header button{
@@ -46,4 +71,57 @@
 
 .title{
     text-align: center;
+}
+
+.folder-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 34px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+div.project-folder{
+    width: 220px;
+    height: 220px;
+    align-content: center;
+    text-align: center;
+    background-color: #FFF04A;
+    border-radius: 40px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+
+.exit-button {
+    transition: 0.15s ease-in-out;
+}
+
+.exit-button:hover{
+    scale: 88%;
+    color: #FFBB00;
+    text-shadow: 0 0 5px #FFEC18;
+}
+
+@media only screen and (max-width: 800px) {
+    div.project-folder{
+        width: 120px;
+        height: 120px;
+        align-content: center;
+        text-align: center;
+        background-color: #FFF04A;
+        border-radius: 16px;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+    }
+
+    .folder-container{
+        gap: 12px;
+    }
 }

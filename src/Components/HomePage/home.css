@@ -7,16 +7,20 @@
 }
 
 #home-container{
-    min-width: 200px;
+    min-width: 250px;
     max-width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    padding-left: 60px;
+    gap: 30px;
 }
 
 .pfp{
+    height: 250px;
     width: 200px;
+    object-fit: cover;
+    border-radius: 24px;
 }
 
 .intro{
@@ -29,4 +33,25 @@
 
 .intro h1, .intro h3{
     margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro{
+        gap: 10px
+    }
+    #home-container{
+        max-width: 70%;
+
+    }
+
+    .pfp{
+        height: 200px;
+        width: 145px;
+        border-radius: 10px;
+
+    }
+    .intro h1 {
+        line-height: 1;
+    }
+    
 }

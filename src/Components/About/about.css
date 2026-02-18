@@ -9,7 +9,7 @@
 
 .about-container{
     min-width: 200px;
-    max-width: 50%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,4 +28,19 @@
 
 span {
     font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    .title {
+        font-size: 28pt;
+    }
+
+    .about-list{
+        padding-left: 20px;
+        font-size: 10pt;
+    }
+
+    .about-list p{
+        font-size: 10pt;
+    }
 }
