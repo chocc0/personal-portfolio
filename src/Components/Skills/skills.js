@@ -30,7 +30,7 @@ function Skills() {
     }
 
     function mapSkill(s) {
-        return (<div className="skill"><img src={'images/icons/' + s.logokey + '.svg'} alt="."/><p>{s.name}</p></div>)
+        return (<div className="skill"><img src={`images/icons/` + s.logokey + '.svg'} alt="."/><p>{s.name}</p></div>)
     }
     
 
