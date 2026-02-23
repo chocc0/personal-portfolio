@@ -1,10 +1,24 @@
-#contact {
-    width: 100vw;
+#contact{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+.contact-container {
+    align-self: center;
+    width: 60vw;
     min-height: 30vh;
-    padding: 50px 120px;
+    padding: 20px 50px 30px 50px;
+    border-radius: 20px;
 
-    background: linear-gradient(45deg,  #BFC1FF 0%, #ffe9b3 25%, #cbe98b 50%, #ffede0 75%,  #ffb8b8 100%);
-    background-size: 250% 250%; animation: animated-gradient-flow 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    background: linear-gradient(45deg,  #ffcec5 0%, #ffefc6 50%, #ff8686 100%);
+    background-size: 220% 250%; animation: animated-gradient-flow 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
 }
 
 @keyframes animated-gradient-flow {
@@ -19,6 +33,12 @@
     }
 }
 
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .info , .info a{
   display: flex;
   align-items: center;
@@ -26,12 +46,48 @@
 }
 
 .info img {
-    width: 50px;
-
+    width: 40px;
+    height: 40px;
+    max-width: none;
+    object-fit: contain;
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
+
+.info img:hover {
+    transform: translateY(-5px);
+    scale: 110%;
+}
+
+.signoff {
+    width: 400px;
+    text-align: right;
+}
+
+.popup{
+    position: absolute;
+    font-size: 0.8rem;
+    background: white;
+    padding: 6px;
+    border-radius: 6px;
+    translate: -16px -30px;
+    display: show;
+}
+
+
 
 @media only screen and (max-width: 800px) {
     .info img{
-        width: 32px;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .info p{
+        display:none;
+    }
+
+    .contact-container h1 {
+        font-size: 20pt;
+        line-height: auto;
     }
 }

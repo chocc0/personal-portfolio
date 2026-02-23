@@ -11,7 +11,6 @@ function Navbar() {
 
     return (
         <div id="navbar-container">
-            <img src='/images/icons/menu.png' alt="menu icon" className="menu-icon" onClick={() => {setMenuOpen(!menuOpen)}}></img>
             <div id="navbar" className="active">
                 <ul className="navbar-list">
                     <li><a className="home-nav" href="#home">Home</a></li>

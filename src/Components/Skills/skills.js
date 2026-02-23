@@ -22,7 +22,7 @@ function Skills() {
         ],
         'Design': [
             { name: 'InkScape', logokey: 'inkscape' },
-            { name: 'Clip Studio Paint', logokey: 'csp1' },
+            { name: 'Clip Studio Paint', logokey: 'csp' },
             { name: 'Figma', logokey: 'figma' },
             { name: 'Fusion 360', logokey: 'fusion' },
             { name: 'Canva', logokey: 'canva' }
