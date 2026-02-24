@@ -94,4 +94,17 @@
 
   .timeline::before { left: 18px; }
   .timeline-marker { left: 10px; }
+  
+  #projects button{
+    scale: 80%;
+  }
+
+  .project-types{
+    gap: 0px;
+    flex-direction: column;
+  }
+
+  .timeline-notch{
+    left: -60px;
+  }
 }

@@ -40,7 +40,7 @@ function Skills() {
                 <h1 className="title">Skills</h1>
                 <div className="skillset">
                     <div className="skills-titles">
-                        <h3>Technical:</h3>
+                        <h3>Languages:</h3>
                         <h3>Frameworks & Libraries:</h3>
                         <h3>Design:</h3>
                     </div>

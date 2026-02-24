@@ -1,13 +1,7 @@
-import { useState, useEffect } from 'react';
 import './Navbar.css'
 
 function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        console.log(visualViewport)
-    }, [menuOpen])
-    
 
     return (
         <div id="navbar-container">

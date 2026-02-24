@@ -58,8 +58,8 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    min-height: 40px;
     padding: 2px 10px;
-    height: 40px;
     border-radius: 6px;
     transition: 0.15s ease-in-out;
     background-color: #FEFFFD; 
@@ -76,7 +76,7 @@
     
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     .skill{
         font-size: 8pt;
         height: 30px;

@@ -18,8 +18,8 @@
     display: flex;
     gap: 20px;
     justify-content: space-between;
-
 }
+
 
 @keyframes animated-gradient-flow {
     0% {
@@ -57,6 +57,7 @@
 .info img:hover {
     transform: translateY(-5px);
     scale: 110%;
+    cursor: hover;
 }
 
 .signoff {
@@ -90,4 +91,9 @@
         font-size: 20pt;
         line-height: auto;
     }
+
+    .contact-container {
+        min-height: 10vh;
+    }
+
 }
